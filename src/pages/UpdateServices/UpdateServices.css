@@ -1,0 +1,57 @@
+.flex{
+    background: #d2d6dc;
+    width: 600px;
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 300px;
+    height: 1000px;
+    }
+    h3{
+    color: #7a99b6;
+    margin-top: 30px;
+    font-size: 20px;
+    }
+    .inputsservices22{
+        margin-top: 55px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    
+    }
+    .inputserv2{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 460px;
+    height: 50px;
+    background: #dee1e6;
+    border-radius: 14px;
+    }
+    .inputserv2 input{
+        height: 50px;
+        width: 400px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 19px;
+        }
+        .btnrservices2{
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 50px;
+            color: #fff;
+            background: #7a99b6;
+            border-radius: 50px;
+            font-size: 19px;
+            font-weight: 700;
+    margin-top: 30px;
+    border-color: transparent;
+    
+        }

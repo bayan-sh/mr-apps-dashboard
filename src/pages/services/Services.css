@@ -1,0 +1,9 @@
+ .create{
+width: 200px;
+margin: 30px;
+padding: 30px;
+display: flex;
+align-items: center;
+justify-items: center;
+
+}

@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+  }
+  
+  ::selection {
+    color: #eee;
+    background: #86898d;
+  }
+//   body {
+//     background-color: $body-color;
+//   }
