@@ -3,6 +3,9 @@ import './Contact.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { ContactAction } from '../../redux/actions/ContactAction';
 import { useNavigate } from 'react-router-dom';
+import l from '../../assets/th.jpg'
+import { Link } from 'react-router-dom'
+import { BiChevronRightCircle } from "react-icons/bi";
 
 const Contact = () => {
     const { contact } = useSelector((state) => state.contact)
@@ -20,7 +23,7 @@ const Contact = () => {
         formData.append("name", name)
         dispath(ContactAction(formData)).then(({ payload }) => {
             if (payload.status) {
-                 navigte("/home")
+                 navigte("/")
             //  window.location.href="/asdasd"
             }
             else {
@@ -32,16 +35,31 @@ const Contact = () => {
     }
   return (
     <div>
-            <form className='flex ' onSubmit={registerhandle}>
+                     <Link to="/AllContact" className='view'>
+                    <BiChevronRightCircle className='icon' />show
+                </Link>
+             <form className='flex1 ' onSubmit={registerhandle}>
                 <h3>CONTACT PAGE</h3>
+                <div className='total'>
+                <div className='all'>
                 <label htmlFor=''>Email</label>
-                <input type='email' placeholder='Email' value={email} defaultValue={"asdasd"} onChange={(e) => setemail(e.target.value)} required />
+                <div className='input1'>
+                <input type='email' placeholder='Email' value={email}  onChange={(e) => setemail(e.target.value)} required />
+                </div>
                 <label htmlFor=''>Message</label>
+                <div className='input1'>
                 <input type='message' placeholder='message' value={message} onChange={(e) => setmessage(e.target.value)} required />
+                </div>
                 <label htmlFor=''>Name</label>
+                <div className='input1'>
                 <input type='name' placeholder='name' value={name} onChange={(e) => setname(e.target.value)} required />
-                <button type='submit' className='btnr'>Login</button>
-            </form>
+                </div>
+                
+                <button type='submit' className='btnrcontact'>Login</button>
+                </div>
+                <img src={l} alt='' className='photo'/>
+                </div>
+            </form> 
     </div>
   )
 }

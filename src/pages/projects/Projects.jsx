@@ -50,10 +50,13 @@ const Projects = () => {
         <Column field="description_en" header="Description English"></Column>
         <Column field="description_ar" header="Description Arabic"></Column>
         <Column field="URL" header="URL"></Column>
+
         <Column body={(rowData) => { return <img src={imageURL + rowData.imagePath} style={{ width: "120px" }} /> }} header="Image"></Column>
         {/* <Column field='imagePath' header="imagePath"></Column> */}
+        
         <Column  body={(rowData) => {  const encodedData = encodeURIComponent(JSON.stringify(rowData)); return <Link  to={{              pathname: `/projects/${rowData._id}`,
               search: `data=${encodedData}`,}} style={{ background: "#d2d6dc",fontSize:"13px"  }}>Edit</Link> }} header="Edit"></Column>
+        
         <Column body={(rowData) => { return <button onClick={() => handaledelet(rowData._id)}  style={{ background: "#d2d6dc" ,borderColor:'transparent',width:"70px",height:"35px",borderRadius:"10px",fontSize:"13px",color:"#7a99b6"  }}>Delete</button> }} header="Delete"></Column>
       </DataTable>
       {/* {projects[0].imagePath} */}

@@ -23,11 +23,11 @@ const Sidebar = () => {
                     <BiSolidReport className='icon' />Projects
                 </Link>
 
-                <Link to="/aboutus" className='item'>
+                {/* <Link to="/aboutus" className='item'>
                     <BiStats className='icon' />Stats
-                </Link>
-                <Link to='#' className='item'>
-                    <BiMessage className='icon' />Message
+                </Link> */}
+                <Link to="/contact" className='item'>
+                    <BiMessage className='icon' />Contact us
                 </Link>
                 <Link to="/Aboutus" className='item'>
                     <BiHelpCircle className='icon' />About Us

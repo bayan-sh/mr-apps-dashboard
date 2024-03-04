@@ -31,7 +31,6 @@ const { id } = useParams()
       formData.append("title_ar", utitlear)
       formData.append("description_en", udescriptionen)
       formData.append("description_ar", udescriptionar)
-     
       formData.append("url", uurl)
       if (uimage.length !== 0) {
         formData.append("image", uimage)

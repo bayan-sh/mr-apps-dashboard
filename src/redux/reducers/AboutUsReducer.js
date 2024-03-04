@@ -28,7 +28,7 @@ export const aboutUsReducer = createSlice({
                 state.loading = false;
             })
 
-
+////////////////////////
             .addCase(UpdateAboutUsAction.pending, (state) => {
                 state.loading = true;
             })

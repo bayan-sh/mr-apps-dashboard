@@ -1,0 +1,76 @@
+.flex1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 270px;
+    margin-top: 100px;
+    background: #d2d6dcab;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+
+}
+h3{
+margin-bottom: 100px;
+display: flex;
+justify-content: center;
+
+
+}
+.all{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+    }
+    .input1 input{
+height: 30px;
+border-radius: 20px;
+border-color: transparent;
+
+    }
+     input:hover{
+        transform: scale(1.0);
+        cursor: pointer;
+    }
+.all label{
+    color:rgb(103, 109, 164)
+    
+}
+.btnrcontact{
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(172, 177, 226, 0.585);
+border-color: transparent;
+}
+.total{
+    flex-direction: row;
+    display: flex;
+    column-gap: 50px;
+}
+.photo{
+
+width: 300px;
+border-radius: 20px;
+margin-left: 100px;
+margin-bottom: 20px;
+
+}
+.view{
+
+width: 100px;
+font-size: 16px;
+margin-top: 50px;
+display: flex;
+align-content: left;
+
+}

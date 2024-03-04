@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axiosInstance, { errorMessage } from "../constant";
 import { GetAboutUsAPI, UpdateAboutUsAPI } from "../Api";
+import axios from "axios";
 
 export const GetAboutUsAction = createAsyncThunk("admin/about-us/get", async (info, { rejectWithValue }) => {
     try {
@@ -19,7 +20,7 @@ export const GetAboutUsAction = createAsyncThunk("admin/about-us/get", async (in
 
 export const UpdateAboutUsAction = createAsyncThunk("admin/about-us/update", async (info, { rejectWithValue }) => {
     try {
-        let { data } = await axiosInstance.put(UpdateAboutUsAPI, info);
+        let { data } = await axiosInstance.put(UpdateAboutUsAPI,info.obj);
         return data;
     } catch (error) {
         if (error.response) {
